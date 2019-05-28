@@ -10,11 +10,11 @@ class HollywoodActorTest {
 
     @Test
     void testHollywoodActor() {
-        final ActorRef johnnyDepp = akkaSystem.actorOf(HollywoodActor.props("johnnyDepp"), "johnnyDepp");
+        final ActorRef johnnyDepp = akkaSystem.actorOf(HollywoodActor.props("johnnyDepp"), "johnnyDepp")
         johnnyDepp.tell("My String Message", null)
 
-        println("Sleep a bit to let actor message print");
-        sleep(200);
+        println "Sleep a bit to let actor message print"
+        sleep 200
     }
 
 }

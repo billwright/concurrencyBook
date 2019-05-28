@@ -7,7 +7,7 @@ import akka.actor.UntypedAbstractActor
 class HollywoodActor extends UntypedAbstractActor {
 
     static public Props props(String message) {
-        return Props.create(HollywoodActor.class, {new HollywoodActor(message) } );
+        return Props.create(HollywoodActor.class, {new HollywoodActor(message) } )
     }
 
     private final String message;
