@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'com.wwwright'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'com.typesafe.akka:akka-actor_2.11:2.5.23'
+    testCompile 'junit:junit:4.12'
+}
